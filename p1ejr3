@@ -1,0 +1,10 @@
+//Sumar los números naturales entre 100 y 300, e informar el resultado.
+
+int suma = 0;
+
+for (int i = 100; i <= 300; i++)
+{
+    suma += i;
+}
+
+Console.WriteLine("La suma de los números naturales entre 100 y 300 es: " + suma);
