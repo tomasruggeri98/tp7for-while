@@ -1,0 +1,16 @@
+//5. Calcular e informar la potencia de un número, ingresando por teclado la base y el exponente.
+
+Console.WriteLine("Ingresar valor de la base");
+int basenum = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingresar valor del exponente");
+int exponente = int.Parse(Console.ReadLine());
+
+int resultado = 1;
+
+for (int i = 0; i < exponente; i++)
+{
+    resultado *= basenum;
+}
+
+Console.WriteLine("La base" + basenum + " elevado al " + exponente + ",da como resultado: " + resultado);
