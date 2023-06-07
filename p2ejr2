@@ -1,0 +1,20 @@
+// Solicitar al usuario que ingrese números positivos y calcular e imprimir su promedio. El bucledebe terminar cuando se ingrese un número negativo.
+
+int suma = 0;
+int contador = 0;
+
+Console.WriteLine("Ingresar números positivos ó un numero negativo para salir)");
+int numero = int.Parse(Console.ReadLine());
+
+while (numero > 0)
+{
+    suma += numero;
+    contador++;
+    Console.WriteLine("Ingrese otro número (Ingrese un negativo para salir)");
+    numero = int.Parse(Console.ReadLine());
+
+}
+
+int promedio = suma / contador;
+
+Console.WriteLine("la suma es igual a : " + suma + ", y el promedio es igual a " + promedio);
